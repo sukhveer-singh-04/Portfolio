@@ -1,0 +1,131 @@
+.container {
+    background-image: url('../assets/images/marble.jpg');
+    animation: 3s infinite alternate slidein;
+    background-size: 100% 100%;
+
+    .nav-bar {
+        padding: 40px 40px 0;
+
+        .top-container {
+            background-color: #191919;
+            border: 1px solid #444646;
+            border-radius: 32px;
+            display: flex;
+            justify-content: center;
+
+            .nav-components {
+                padding: 12px 16px;
+                background-color: floralwhite;
+                border-radius: 24px;
+                margin: 12px;
+                font-family: "Silka";
+                font-size: 14px;
+            }
+        }
+    }
+
+    .image-container {
+        padding: 0px 64px;
+
+        .image {
+            height: 100%;
+        }
+    }
+
+    .name-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        .card-holder {
+            background-color: #1f2321a8;
+            margin: 50px;
+            border: 5px solid #a3a2a1;
+            border-radius: 36px;
+            height: 364px;
+            position: relative;
+            min-width: 64%;
+
+            .chess-image {
+                height: 265px;
+                position: absolute;
+                right: 0;
+                bottom: 60px;
+            }
+
+            .mean-image {
+                height: 35px;
+                top: 50px;
+                position: absolute;
+                left: 54px;
+                border-radius: 6px;
+            }
+
+            .developer-logo {
+                height: 35px;
+                top: 24px;
+                position: absolute;
+                right: 24px;
+            }
+
+            .experience-logo {
+                height: 35px;
+                bottom: 20px;
+                position: absolute;
+                right: 28px;
+                border-radius: 6px;
+            }
+        }
+
+        .name {
+            font-size: 50px;
+            position: absolute;
+            color: #ffffff;
+            left: 50px;
+            top: 106px;
+            font-family: 'Silka';
+        }
+
+        .description {
+            font-size: 16px;
+            width: 85%;
+            font-family: 'Silka';
+        }
+
+        .job-title {
+            font-size: 32px;
+            color: azure;
+            bottom: 36px;
+            left: 50px;
+            font-family: 'Silka';
+            position: absolute;
+        }
+    }
+}
+
+
+.first-section {
+    background: linear-gradient(#eaeaea, #4a4a4a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .box-container {
+        width: 100%;
+        // display: flex;
+        // justify-content: space-evenly;
+        // align-items: end;
+        // flex-wrap: wrap;
+        padding: 62px 74px;
+
+        .box {
+            width: 336px;
+            height: 400px;
+            background-color: #59595a;
+            border: 1px solid white;
+            border-radius: 50px;
+            margin: 20px;
+        }
+    }
+}
