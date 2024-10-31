@@ -1,0 +1,25 @@
+<div class="des-text">
+    <p class="description">
+        Building reliable systems that work for everyone. Let’s create a solid foundation for your growth!
+    </p>
+</div>
+
+<div class="project-container">
+    <div class="title">
+        <span class="title-text">Projects</span>
+    </div>
+    <div class="details">
+        <div class="project" *ngFor="let project of projects">
+            <div class="bg-image">
+
+                <img class="bg" src="{{project.backgroundImage}}" alt="icon">
+            </div>
+
+            <div class="image">
+                <img class="project-image" src="{{project.image}}" alt="icon">
+            </div>
+
+            <div class="name" (click)="project.link">{{project.title}}</div>
+        </div>
+    </div>
+</div>

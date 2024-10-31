@@ -1,0 +1,163 @@
+.des-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 84px 20%;
+    color: white;
+    background: black;
+
+    .description {
+        font-family: "Inter", sans-serif;
+        font-size: 28px;
+        text-align: center;
+        background-image: linear-gradient(to right, rgb(73, 72, 72), rgb(226, 225, 225));
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+}
+
+.project-container {
+    background: black;
+
+    .title {
+        display: flex;
+        justify-content: center;
+        padding: 52px;
+
+        .title-text {
+            font-family: "Inter", sans-serif;
+            font-size: 18px;
+            color: white;
+            padding: 10px 48px;
+            border: 0.5px solid white;
+            border-radius: 20px;
+        }
+    }
+
+    .details {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 12px;
+        color: white;
+        font-size: 14px;
+
+        .project {
+            flex: 50%;
+            border: 1px solid white;
+            border-radius: 12px;
+            padding: 24px;
+            max-width: 35%;
+            margin: 40px;
+            background: #1b1b1b;
+            height: 296px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            /* Ensures that the background image doesn’t overflow the project box */
+        }
+
+        .name {
+            color: white;
+            position: absolute;
+            bottom: -32px;
+            font-family: "Inter", sans-serif;
+            font-size: 20px;
+            left: 0;
+            padding: 0 10px;
+        }
+
+        .detail {
+            text-align: center;
+            z-index: 2;
+            /* Makes sure text stays above background */
+        }
+
+        .project-name {
+            font-family: "Inter", sans-serif;
+            font-size: 24px;
+            color: white;
+        }
+
+        .description {
+            font-family: "Inter", sans-serif;
+            font-size: 18px;
+        }
+
+        .time-period {
+            font-family: "Inter", sans-serif;
+            font-size: 14px;
+            color: #575757;
+        }
+
+        /* Background Image Styling */
+        .bg-image {
+            position: absolute;
+            height: auto;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+            /* Send the background behind other elements */
+            // background-image: url('{{project.backgroundImage}}'); /* Example: dynamic background image */
+            background-size: cover;
+            /* Make sure the background covers the container */
+            background-position: center;
+            /* Center the background */
+            opacity: 0.5;
+            /* Optional: Slight transparency for background image */
+
+
+            .bg {
+                // height: webkit-fill-available;
+                height: -webkit-fill-available;
+            }
+        }
+
+        /* Icon (Image) in the Center */
+        .image {
+            max-height: 100px;
+            max-width: 100px;
+            z-index: 2;
+            /* Ensures the icon stays above the background */
+        }
+
+        .name {
+            position: absolute;
+            z-index: 3;
+            /* Make sure the title is above background and icon */
+            bottom: 10px;
+            /* Adjust this to position the title */
+            left: 50%;
+            transform: translateX(-50%);
+            /* Center the title horizontally */
+            color: white;
+            font-family: "Inter", sans-serif;
+            font-size: 20px;
+            padding: 0 10px;
+        }
+
+        .project-image {
+            height: 100px;
+            /* Icon height */
+            width: 100px;
+            /* Icon width */
+            border-radius: 16px;
+            /* Rounded corners for the icon */
+            object-fit: contain;
+            /* Ensures the image doesn't distort */
+        }
+
+        /* Optional hover effect */
+        .project:hover {
+            background-color: #2b2b2b;
+            /* Slight background change on hover */
+        }
+
+    }
+}

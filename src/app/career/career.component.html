@@ -1,0 +1,27 @@
+<div class="career-container">
+    <div class="title">
+        <span class="title-text">Experience</span>
+    </div>
+    <div class="details" *ngFor="let role of roles">
+        <div class="role">
+            <div class="detail">
+                <div class="role-name">{{role.designation}}</div>
+                <div class="company">{{role.company
+                    }}</div>
+                <div class="time-period">{{role.timePeriod}}</div>
+            </div>
+            <div class="description">{{role.description}}
+            </div>
+        </div>
+        <div class="technologies">
+            <div class="tech" *ngFor="let tech of role.technologies">
+                <p class="name">{{tech}}</p>
+            </div>
+        </div>
+        <div class="divider">
+            <br>
+        </div>
+
+    </div>
+
+</div>

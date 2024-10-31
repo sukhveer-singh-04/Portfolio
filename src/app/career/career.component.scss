@@ -1,0 +1,88 @@
+.career-container {
+    background: black;
+
+    .title {
+        display: flex;
+        justify-content: center;
+        padding: 52px;
+
+        .title-text {
+            // padding: 4px 32px;
+            // border: 1px solid white;
+            // border-radius: 20px;
+            // font-family: "Inter", sans-serif;
+font-size: 24px;
+            // color: white
+            font-family: "Inter", sans-serif;
+font-size: 18px;
+            color: white;
+            padding: 10px 48px;
+            border: 0.5px solid white;
+            border-radius: 20px;
+        }
+    }
+
+    .details {
+        // display: flex;
+        // justify-content: center;
+        padding: 24px 72px;
+        color: white;
+
+        .role {
+            display: flex;
+            justify-content: center;
+
+            .detail {
+                flex: 50%;
+                padding: 24px;
+                font-family: "Inter", sans-serif;
+font-size: 20px;
+
+
+                .company {
+                    padding: 6px 0;
+                    color: #949494;
+                    font-family: "Inter", sans-serif;
+font-size: 16px;
+                }
+
+                .time-period {
+                    font-family: "Inter", sans-serif;
+font-size: 14px;
+                    color: #575757;
+                }
+            }
+
+            .description {
+                flex: 50%;
+                padding: 24px 24px 12px;
+                font-family: "Inter", sans-serif;
+font-size: 16px;
+                color: #a1a1a1;
+            }
+        }
+
+        .technologies {
+            display: flex;
+            justify-content: center;
+            padding: 14px 14px 6px;
+
+            .tech {
+                .name {
+                    margin: 6px;
+                    padding: 11px 24px;
+                    border-radius: 10px;
+                    background-color: #0f172a;
+                    font-family: "Inter", sans-serif;
+font-size: 14px;
+                }
+            }
+        }
+
+        .divider {
+            height: 1px;
+            margin: 24px;
+            background: #636363;
+        }
+    }
+}

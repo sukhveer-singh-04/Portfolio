@@ -12,12 +12,14 @@
     .header-section {
         // width: calc(100% - 20);
         padding: 50px;
-        font-size: 48px;
+        font-family: "Inter", sans-serif;
+font-size: 48px;
         color: #fff;
     }
 
     .experience-content {
         margin: 50px 2px;
+        border: 2px solid #bebebe85;
         border-radius: 10px;
         margin-left: 20%;
         padding: 24px 12px;
@@ -35,7 +37,8 @@
             .time-period {
                 padding: 0 20px;
                 width: 100%;
-                font-size: 18px;
+                font-family: "Inter", sans-serif;
+font-size: 18px;
                 .duration {
                     width: max-content;
                     margin: 10px 6px;
@@ -44,11 +47,13 @@
 
             .details {
                 .heading {
-                    font-size: 24px;
+                    font-family: "Inter", sans-serif;
+font-size: 24px;
                     font-weight: 600;
 
                     .sub-heading {
-                        font-size: 18px;
+                        font-family: "Inter", sans-serif;
+font-size: 18px;
                         margin: 0;
                     }
                 }
@@ -65,7 +70,8 @@
                         padding: 8px 10px;
                         border-radius: 10px;
                         background-color: #0f172a;
-                        font-size: 14px;
+                        font-family: "Inter", sans-serif;
+font-size: 14px;
                     }
                 }
             }
